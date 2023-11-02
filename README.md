@@ -1,1 +1,1 @@
-This is a readme file on intorduction to python
+this is a readme file for this directory

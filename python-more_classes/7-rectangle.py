@@ -56,4 +56,17 @@ class Rectangle:
                 except Exception:
                     total += type(self).print_symbol
             if i is not self.__height - 1:
+                total += "\n"
+        return total
 
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+
+    def area(self):
+        return self.__width * self.__height
+
+    def perimeter(self):
+        if self.__width is 0 or self.__height is 0:
+            return 0
+        return (2 * self.__width) + (2 * self.__height)
